@@ -7,7 +7,7 @@ def main():
     app = QApplication(sys.argv)
 
     if not init_db("expense.db"):
-        QMessageBox.critical(None, "Error", "Could not load you databse....")
+        QMessageBox.critical(None, "Error", "Could not load you database....")
         sys.exit(1)
 
     window = ExpenseApp()
